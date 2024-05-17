@@ -14,10 +14,10 @@ datasource db {
 }
 
 model User {
-  id            String @id @unique @db.Uuid
+  id            String  @id @default(uuid())
   firstName     String
   lastName      String
-  email         String @unique
+  email         String  @unique
   password      String
-  learningStyle String
+  learningStyle String?
 }

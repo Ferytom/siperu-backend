@@ -18,7 +18,8 @@ export default async function handler(
 
   await prisma.user.create({
     data: {
-      name: firstName + ' ' + lastName,
+      firstName,
+      lastName,
       email,
       password: hashedPassword,
     },
