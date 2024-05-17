@@ -40,10 +40,11 @@ export default async function handler(
         message: 'Login success',
         data: {
           token,
+          id: userFound?.id,
           email: userFound?.email,
           firstName: userFound?.firstName,
           lastName: userFound?.lastName,
-          learningStyle: userFound?.learningStle,
+          learningStyle: userFound?.learningStyle,
         },
       })
     }
