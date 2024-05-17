@@ -41,8 +41,9 @@ export default async function handler(
         data: {
           token,
           email: userFound?.email,
-          name: userFound?.name,
-          role: userFound?.role,
+          firstName: userFound?.firstName,
+          lastName: userFound?.lastName,
+          learningStyle: userFound?.learningStle,
         },
       })
     }
